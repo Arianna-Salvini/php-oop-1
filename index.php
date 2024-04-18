@@ -12,6 +12,21 @@ class Production
         $this->language = $language;
         $this->rating = $rating;
     }
+
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    public function getLanguage(): string
+    {
+        return $this->language;
+    }
+
+    public function getRating(): string
+    {
+        return $this->rating;
+    }
 }
 
 $movie1 = new Production('Kill Bill - Volume 1', 'English', 10);
