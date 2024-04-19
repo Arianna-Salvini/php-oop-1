@@ -1,5 +1,5 @@
 # Descrizione
-create un file index.php in cui è definita una classe *Production*
+create un file *index.php* in cui è definita una classe *Production*
 
 All'interno della classe dovrete gestire:
 - un titolo
