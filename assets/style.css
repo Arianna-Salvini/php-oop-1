@@ -17,3 +17,14 @@
 .text_color_section {
     color: rgb(27, 113, 184);
 }
+
+header,
+footer {
+    padding: 0.5rem 3rem;
+    background-color: rgb(9, 0, 58);
+    color: lightskyblue;
+}
+
+footer>div {
+    font-size: 1rem;
+}
