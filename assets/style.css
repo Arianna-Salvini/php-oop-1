@@ -1,0 +1,19 @@
+.bg_darkblue {
+    background-color: rgb(30, 56, 77);
+}
+
+.bg_card {
+    background-color: steelblue;
+}
+
+.text_color_description {
+    color: rgb(9, 0, 58);
+}
+
+.text_color_titles {
+    color: lightskyblue;
+}
+
+.text_color_section {
+    color: rgb(27, 113, 184);
+}
