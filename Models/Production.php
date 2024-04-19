@@ -1,12 +1,11 @@
 <?php
-
 class Production
 {
     // public $title;
     // public $language;
     // public $rating;
 
-    public function __construct(public string $title, public string $language, public int $rating)
+    public function __construct(public string $title, public string $language, public float $rating, public Genre $genre)
     {
         //     $this->title = $title;
         //     $this->language = $language;
