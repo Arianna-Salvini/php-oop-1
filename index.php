@@ -1,35 +1,6 @@
 <?php
-
-class Production
-{
-    // public $title;
-    // public $language;
-    // public $rating;
-
-    public function __construct(public string $title, public string $language, public int $rating)
-    {
-        //     $this->title = $title;
-        //     $this->language = $language;
-        //     $this->rating = $rating;
-    }
-
-
-    // getting
-    public function getTitle(): string
-    {
-        return $this->title;
-    }
-
-    public function getLanguage(): string
-    {
-        return $this->language;
-    }
-
-    public function getRating(): string
-    {
-        return $this->rating;
-    }
-}
+require_once __DIR__ . '/db.php';
+require_once __DIR__ . '/Models/Production.php';
 
 $movie1 = new Production('Kill Bill - Volume 1', 'English', 10);
 // $movie1->title = 'Kill Bill - Volume 1';
