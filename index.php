@@ -1,19 +1,7 @@
 <?php
 require_once __DIR__ . '/db.php';
 require_once __DIR__ . '/Models/Production.php';
-
-// $movie1 = new Production('Kill Bill - Volume 1', 'English', 10);
-// $movie1->title = 'Kill Bill - Volume 1';
-// $movie1->language = 'English';
-// $movie1->rating = 10;
-
-// $movie2 = new Production('Povere creature', 'English', 9);
-// $movie2->title = 'Povere creature';
-// $movie2->language = 'English';
-// $movie2->rating = 9;
-
-// var_dump($movie1);
-// var_dump($movie2);
+require_once __DIR__ . '/Models/Genre.php';
 
 ?>
 
@@ -34,22 +22,33 @@ require_once __DIR__ . '/Models/Production.php';
         <h1 class="text_color_section py-3">Production List</h1>
         <div class="row row-cols-4">
             <?php foreach ($movies as $movie) : ?>
-                <div class="p-3" v-for="movie in movies">
+                <div class="p-3">
                     <div class=" bg_card ratio ratio-1x1 rounded-2 shadows">
-                        <div class="card-body text-center align-middle py-5">
-                            <h3 class=" text_color_titles"><?= $movie['title'] ?></h3>
+                        <div class="card-body text-center align-middle  d-flex flex-column justify-content-center">
+                            <h3 class=" text_color_titles"> <?= $movie->getTitle() ?> </h3>
                             <div class="card-text align-center text_color_description">
-                                <strong>Language: </strong> <?= $movie['language'] ?>
+                                <strong>Language: </strong> <?= $movie->getLanguage()  ?>
                             </div>
                             <div class="card-text text_color_description">
-                                <strong>Rating: </strong> <?= $movie['rating'] ?>
+                                <strong>Rating: </strong> <?= $movie->getRating() ?>
+
+                                <!-- Add genre and genre description -->
                             </div>
+
+                            <div class="card-text text_color_description">
+                                <strong>Genre: </strong> <?= $movie->genre->type ?>
+                            </div>
+                            <div class="card-text text_color_description">
+                                <?= $movie->genre->description_genre  ?>
+                            </div>
+
                         </div>
+
                     </div>
                     <!-- /.card -->
                 </div>
                 <!-- /.col -->
-            <?php endforeach; ?>
+            <?php endforeach ?>
         </div>
         <!-- /.row row-cols-4 -->
     </div>
