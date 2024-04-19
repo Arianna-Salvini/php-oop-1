@@ -13,8 +13,23 @@ class Production
         //     $this->rating = $rating;
     }
 
+    //Setters 🐶
+    public function setTitle($title)
+    {
+        $this->title;
+    }
 
-    // getting
+    public function setLanguage($language)
+    {
+        $this->language;
+    }
+
+    public function setRating($rating)
+    {
+        $this->rating;
+    }
+
+    // Getters
     public function getTitle(): string
     {
         return $this->title;
