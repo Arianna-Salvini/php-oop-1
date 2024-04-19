@@ -25,7 +25,8 @@ $movies = [
     ],
     [
         "title" => "Pulp Fiction",
-        "language" => 9,
+        "language" => "English",
+        "rating" => 9,
         "genre" =>  "Giallo/Thriller",
         "genre_description" => "Giallo/Thriller description ",
 
